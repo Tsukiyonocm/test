@@ -109,28 +109,12 @@ video#bgvid {
     video#bgvid {
         position: fixed;
         display: block;
-        top: 75%;
-        left: 50%;
+        top: 0%;
+        left: 0%;
         min-width: 100%;
         min-height: 100%;
         width: auto;
         height: auto;
         z-index: -100;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
     }
 }
-
-/* .vert-center-container {
-    position: relative;
-}
-
-.vert-center-text {
-    position: absolute;
-    top: 60%;
-    left: 0;
-    text-align: center;
-    width: 100%;
-} */
