@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BootStrap 4</title>
+    <title>Sockeroo</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/fjt4fva.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -22,82 +22,75 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <img class="ml-2 ml-lg-0" src="assets/img/sockeroo_logo_sm.png" alt="Brand">
-
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div id="mainNavbar" class="collapse navbar-collapse mt-2 mt-lg-0">
-                <div class="main-navigation">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Our Process</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Blog</a>
-                        </li>
-                    </ul>
+    
+    <section id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-3 contact-title">Contact Us</h1>
                 </div>
 
-                <div class="navbar-nav social mx-2 ml-lg-auto">
-                    <span class="navbar-text mr-2">Follow Us</span>
-                    <ul class="navbar-nav align-items-lg-center flex-row">
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-twitter-square"></i></a>
-                        </li>
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-facebook-square"></i></a>
-                        </li>
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-linkedin"></i></a>
-                        </li>
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-instagram"></i></a>
-                        </li>
-                    </ul>
+                <div class="col-12">
+                    <div class="row contact-info">
+                        <div class="col-6">
+                            <h3>- Our Office -</h3>
+                            <address>
+                                SOCKEROO Marketing<br>
+                                123 Address Rd.<br>
+                                Pittsburgh, PA<br>
+                                15222<br>
+                                <a href="tel:+555-555-5555">TEL - 555.555.5555</a><br>
+                                <a href="mailto:sockeroomarketing@gmail.com">Email - sockeroomarketing@gmail.com</a>
+                            </address>
+                        </div>
+    
+                        <div class="col-6">
+                            <p class="social">- Say Hello -</p>
+                            <div class="social-contact">
+                                <ul class="">
+                                    <li><a href="#"><i class="fab fa-inverse fa-twitter-square fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-inverse fa-facebook-square fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-inverse fa-linkedin fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-inverse fa-instagram fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-sub">Subscribe to Our Newsletter</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col-12 m-0 p-0">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Company or Organization">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="comment" class="form-control" placeholder="Tell us a bit about your project, timeline, and budget"></textarea>
+                        </div>
+                        <button class="btn btn-form">Submit</button>
+                    </form>
                 </div>
-            </div>
-
-        </div> <!-- End Container -->
-    </nav> <!-- End Nav-->
-
-    <section id="heroVideo">
-        <div class="row">
-            <!-- Video plays on large screens -->
-            <div class="col-xs-12 vert-center-container embed-responsive embed-responsive-4by3">
-                <video id="bgvid" playsinline autoplay muted class="img-fluid" poster="assets/img/Image-placeholder.png">
-                    <source src="assets/vid/Sockeroo_logoAni_2.mp4">
-                </video>
-            </div>
-            <!-- For Mobile versions -->
-            <div class="text-center mobile-image">
-                <img src="assets/img/mobile-heading.png" alt="Company Name for Mobile" class="img-responsive mx-auto header-image">
             </div>
             
         </div>
-    
-</section>
+    </section>
 
 
     <!-- Jquery, Popper.js, and BootStrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Javascript -->
     <script src="js/scripts.js"></script>
