@@ -6,6 +6,8 @@ body {
 ---------------------------------------------------------*/
 #contactus {
     color: white;
+    max-height: 62.5rem;
+    width: auto;
 }
 
 .contact-title {
@@ -21,19 +23,34 @@ body {
       align-items: center;
       text-align: center;
   }
+
+  .custom-contact {
+      max-height: 15rem;
+  }
   
   .social {
     font-weight: 700;
+  }
+
+  .custom-social {
+      max-height: 15rem;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
   }
   
   .social-contact ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    padding: 0;
     
   }
   
   .social-contact ul li {
-    /* padding: 0 1rem; */
+    padding: 0 1rem;
   }
   
   .btn-sub {
@@ -42,6 +59,7 @@ body {
     background-color: #fff;
     font-weight: 700;
     border-radius: 0.15rem;
+    white-space: normal;
   }
   
   .btn-form {
@@ -53,6 +71,11 @@ body {
     border-radius: 0.15rem;
   }
   
+  form {
+      max-width: 100%;
+      margin: 0 .5rem;
+  }
+
   .form-control {
     background-color: rgb(46, 46, 46);
     border: 1px solid white;
