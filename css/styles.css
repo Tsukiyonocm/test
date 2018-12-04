@@ -163,8 +163,8 @@ a:visited {
 }
 
 #servicesVid {
-  height: 50vh;
-  width: 100%;
+  height: 100vh;
+  width: auto;
   position: relative;
   -o-object-fit: cover;
   object-fit: cover;
@@ -173,10 +173,11 @@ a:visited {
 .services_overlay {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
+
   top: 0;
   left: 0;
   right: 0;
-  bottom: .5rem;
+  bottom: 0;
 
   display: -webkit-box;
 
@@ -216,241 +217,6 @@ a:visited {
   padding: 0 1rem;
 }
 
-#service-icons {
-  background-color: #fff;
-  padding-top: 5rem;
-}
-
-.card {
-  border: none;
-  text-align: center;
-  max-width: 150px;
-  min-width: 150px;
-  height: auto;
-  color: black;
-}
-
-.services-text {
-  background-color: #fff;
-  margin-top: 3rem;
-}
-
-.services_list {
-  list-style: none;
-  font-size: 1.25rem;
-  color: black;
-}
-
-#service-icons {
-  margin-top: -1rem;
-}
-
-.service_lead-container {
-  background-color: rgb(51, 204, 204);
-  margin: 0;
-}
-
-.service_lead-container:before {
-  content: "";
-  background-color: rgb(51, 204, 204);
-  position: absolute;
-  width: 999em;
-  left: -999em;
-  top: 0;
-  bottom: 0;
-}
-
-.service_points-container {
-  background-color: #fff;
-}
-
-/** Process
----------------------------------------------------------*/
-/* #process {
-  position: relative;
-  height: 100%;
-}
-
-#processVid {
-  max-height: 100%;
-  min-width: 100%;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.process_overlay {
-  background-color: rgba(255, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.process-header {
-  margin-top: 2rem;
-}
-
-.process_text {
-  max-width: 56.25rem;
-  margin: 2rem 0;
-  padding: 0 1rem;
-} */
-
-/* Process Steps Start here */
-/* .flex-process {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-
-  -ms-overflow-style: none; 
-  overflow: -moz-scrollbars-none;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
-.process-item {
-  max-width: 12rem;
-  padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  -ms-flex-item-align: stretch;
-
-  align-self: stretch;
-}
-
-.step-section {
-  max-width: 100%;
-  max-height: 100%;
-  text-align: center;
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.step-title {
-  font-size: 1.1rem;
-}
-
-.title-step {
-  display: block;
-  font-size: 0.8rem;
-  padding-top: 1rem;
-}
-
-.process-image {
-  background-color: transparent;
-  max-height: 6rem;
-  max-width: 6rem;
-}
-
-.arrow {
-  max-width: 100%;
-  max-height: 100%;
-  position: relative;
-}
-
-.fa-arrow-right {
-  position: relative;
-  display: none;
-  top: 25%;
-  left: 0%;
-}
-
-.step-text {
-  font-size: 0.8rem;
-  padding: 1rem;
-} */
-
-
-/* Possibly needed for processes section to display properly */
-@media (min-width: 486px) {
-  #processVid {
-    height: 100%;
-  }
-
-  .process-item {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .flex-process {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .fa-arrow-right {
-    top: 15%;
-    left: 0;
-    display: block;
-  }
-
-  .fa-arrow-down {
-    display: none;
-  }
-}
-
-/* Contact form reset for xs sizes */
-@media (max-width: 575px) {
-  .cust-col-12 {
-    -webkit-box-flex: initial;
-    -ms-flex: initial;
-    flex: initial;
-    max-width: 100%;
-  }
-}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -469,42 +235,8 @@ a:visited {
     font-size: 1.1rem;
   }
 
-  .text-overlay {
-    top: 20%;
-  }
-
-  .overlay_text {
-    font-size: 1rem;
-  }
-
-  .overlay_btn {
-    font-size: 0.8rem;
-  }
-
-  #servicesVid {
-    height: 65%;
-  }
-
-  .service_lead-container:after {
-    content: "";
-    background-color: rgb(51, 204, 204);
-    position: absolute;
-    width: 999em;
-    right: -999em;
-    top: 0;
-    bottom: 0;
-  }
-
   .quote {
     font-size: 1.1rem;
-  }
-
-  #processVid {
-    height: 100%;
-  }
-
-  .fa-arrow-down {
-    display: none;
   }
 }
 
