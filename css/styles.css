@@ -1,83 +1,621 @@
+:root {
+  --primary-green: rgb(51, 204, 204);
+}
+
 body {
-    background-color: black;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: rgb(22, 22, 22);
+  /* Background color matches video background color so ther is no seam on shrinking screens */
+  color: #fff;
 }
 
-/** Contact
+a,
+a:hover,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  width: 75rem;
+}
+
+/** Navbar
+   ---------------------------------------------------------*/
+/* .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav a,
+.navbar-text {
+  color: #fff;
+  letter-spacing: 1.2;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-nav a:hover {
+  color: var(--primary-green);
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+.navbar-nav .active {
+  color: var(--primary-green);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.fa-twitter-square:hover,
+.fa-facebook-square:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  color: var(--primary-green);
+  cursor: pointer;
+} */
+
+/** Multi Use 
+   ---------------------------------------------------------*/
+
+.overlay_header,
+.services_header,
+.process-header,
+.about-header,
+.contact-header {
+  font-family: futura-pt-condensed, sans-serif;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+}
+
+.overlay_text,
+.services_text,
+.process_text,
+.about_text {
+  font-size: 1rem;
+}
+
+/** Header
+   ---------------------------------------------------------*/
+/* .section {
+  text-align: center;
+  overflow: hidden;
+}
+
+#heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#bgvid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.text-overlay {
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading-logo {
+  max-height: 25rem;
+  min-height: 10rem;
+  width: auto;
+}
+
+.overlay_text {
+  max-width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.overlay_btn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  color: #000;
+  background-color: #fff;
+  /* margin-top: 1rem; */
+/* } */
+
+/** Services
+   ---------------------------------------------------------*/
+
+#services {
+  position: relative;
+}
+
+#servicesVid {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.services_overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: .5rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.services_header {
+  padding-top: 1rem;
+}
+
+.quote {
+  max-width: 45rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.blockquote-footer {
+  color: white;
+}
+
+.services_text {
+  max-width: 45rem;
+  padding: 0 1rem;
+}
+
+#service-icons {
+  background-color: #fff;
+  padding-top: 5rem;
+}
+
+.card {
+  border: none;
+  text-align: center;
+  max-width: 150px;
+  min-width: 150px;
+  height: auto;
+  color: black;
+}
+
+.services-text {
+  background-color: #fff;
+  margin-top: 3rem;
+}
+
+.services_list {
+  list-style: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+#service-icons {
+  margin-top: -1rem;
+}
+
+.service_lead-container {
+  background-color: rgb(51, 204, 204);
+  margin: 0;
+}
+
+.service_lead-container:before {
+  content: "";
+  background-color: rgb(51, 204, 204);
+  position: absolute;
+  width: 999em;
+  left: -999em;
+  top: 0;
+  bottom: 0;
+}
+
+.service_points-container {
+  background-color: #fff;
+}
+
+/** Process
 ---------------------------------------------------------*/
-#contactus {
-    color: white;
-    max-height: 62.5rem;
-    width: auto;
+/* #process {
+  position: relative;
+  height: 100%;
 }
 
-.contact-title {
-    font-family: futura-pt-condensed, sans-serif;
-    font-weight: 700;
-    padding: 1rem 0;
+#processVid {
+  max-height: 100%;
+  min-width: 100%;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.process_overlay {
+  background-color: rgba(255, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.process-header {
+  margin-top: 2rem;
+}
+
+.process_text {
+  max-width: 56.25rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+} */
+
+/* Process Steps Start here */
+/* .flex-process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none; 
+  overflow: -moz-scrollbars-none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.process-item {
+  max-width: 12rem;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -ms-flex-item-align: stretch;
+
+  align-self: stretch;
+}
+
+.step-section {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.step-title {
+  font-size: 1.1rem;
+}
+
+.title-step {
+  display: block;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+
+.process-image {
+  background-color: transparent;
+  max-height: 6rem;
+  max-width: 6rem;
+}
+
+.arrow {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.fa-arrow-right {
+  position: relative;
+  display: none;
+  top: 25%;
+  left: 0%;
+}
+
+.step-text {
+  font-size: 0.8rem;
+  padding: 1rem;
+} */
+
+
+/* Possibly needed for processes section to display properly */
+@media (min-width: 486px) {
+  #processVid {
+    height: 100%;
   }
 
-  .contact-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+  .process-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .flex-process {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .fa-arrow-right {
+    top: 15%;
+    left: 0;
+    display: block;
+  }
+
+  .fa-arrow-down {
+    display: none;
+  }
+}
+
+/* Contact form reset for xs sizes */
+@media (max-width: 575px) {
+  .cust-col-12 {
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    max-width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .overlay_header,
+  .services_header,
+  .process-header,
+  .about-header,
+  .contact-header {
+    font-size: 4.75rem;
+  }
+
+  .overlay_text,
+  .services_text,
+  .process_text,
+  .about_text {
+    font-size: 1.1rem;
+  }
+
+  .text-overlay {
+    top: 20%;
+  }
+
+  .overlay_text {
+    font-size: 1rem;
+  }
+
+  .overlay_btn {
+    font-size: 0.8rem;
+  }
+
+  #servicesVid {
+    height: 65%;
+  }
+
+  .service_lead-container:after {
+    content: "";
+    background-color: rgb(51, 204, 204);
+    position: absolute;
+    width: 999em;
+    right: -999em;
+    top: 0;
+    bottom: 0;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+  }
+
+  #processVid {
+    height: 100%;
+  }
+
+  .fa-arrow-down {
+    display: none;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .overlay_header,
+  .services_header,
+  .process-header,
+  .about-header,
+  .contact-header {
+    font-size: 5.25rem;
+  }
+
+  .overlay_text,
+  .services_text,
+  .process_text,
+  .about_text {
+    font-size: 1.2rem;
+  }
+
+  .cust-col-md-6 {
+    -ms-flex: auto;
+    -webkit-box-flex: 1;
+    flex: auto;
+    max-width: 100%;
   }
 
   .custom-contact {
-      max-height: 15rem;
+    text-align: left;
+    padding-left: 0.5rem;
   }
-  
-  .social {
-    font-weight: 700;
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .text-overlay {
+    top: 15%;
+  }
+
+  .overlay_header {
+    font-size: 4.75rem;
+  }
+
+  .overlay_text {
+    font-size: 1.15rem;
+  }
+
+  .overlay_btn {
+    font-size: 1rem;
+  }
+
+  .service_lead-container:after {
+    display: none;
+  }
+
+  .contact-header {
+    text-align: left;
+  }
+
+  .custom-contact {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .contact-info {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 0.5rem;
   }
 
   .custom-social {
-      max-height: 15rem;
-      width: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
-  
-  .social-contact ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    
-  }
-  
-  .social-contact ul li {
-    padding: 0 1rem;
-  }
-  
-  .btn-sub {
-    letter-spacing: 1.5;
-    color: black;
-    background-color: #fff;
-    font-weight: 700;
-    border-radius: 0.15rem;
-    white-space: normal;
-  }
-  
-  .btn-form {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    padding-top: 4rem;
     width: 100%;
-    letter-spacing: 1.5;
-    color: black;
-    background-color: #fff;
-    font-weight: 700;
-    border-radius: 0.15rem;
-  }
-  
-  form {
-      max-width: 100%;
-      margin: 0 .5rem;
   }
 
-  .form-control {
-    background-color: rgb(46, 46, 46);
-    border: 1px solid white;
-    border-radius: 0.2rem;
+  .social-contact ul li {
+    padding: 0 1.5rem 0 0;
+    margin-top: 0;
   }
+
+  #processVid {
+    height: 85%;
+  }
+
+  #aboutus {
+    padding: 3rem 0;
+  }
+
+  #contactus {
+    padding: 3rem 0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .custom-social {
+    padding-top: 5.3rem;
+  }
+
+  #processVid {
+    height: 25%;
+  }
+}
